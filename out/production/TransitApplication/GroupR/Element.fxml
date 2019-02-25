@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="635.0" prefWidth="287.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GroupR.ElementController">
+   <children>
+      <VBox prefHeight="635.0" prefWidth="287.0">
+         <children>
+            <SplitPane prefHeight="30.0" prefWidth="200.0">
+               <items>
+                  <AnchorPane prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="applyButton" disable="true" layoutX="93.0" layoutY="1.0" mnemonicParsing="false" onAction="#apply" prefWidth="100.0" text="Apply">
+                           <tooltip>
+                              <Tooltip fx:id="applyToolTip" text="Click To Apply Changes" />
+                           </tooltip>
+                        </Button>
+                        <Button fx:id="backButton" disable="true" layoutY="1.0" mnemonicParsing="false" onAction="#prevData" prefWidth="40.0" text="🡠 ">
+                           <tooltip>
+                              <Tooltip fx:id="prevDataToolTip" text="Previous Data" />
+                           </tooltip>
+                        </Button>
+                        <Button fx:id="forwardButton" disable="true" layoutX="246.0" layoutY="1.0" mnemonicParsing="false" onAction="#nextData" prefWidth="40.0" text="🡢 ">
+                           <tooltip>
+                              <Tooltip fx:id="nextDataToolTip" text="Forward Data" />
+                           </tooltip>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane fx:id="elementsTitlePane1" prefHeight="30.0" prefWidth="200.0">
+               <items>
+                  <AnchorPane prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="dataLabel" layoutX="24.0" layoutY="5.0" prefHeight="20.0" prefWidth="240.0" text="Data Label" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane fx:id="dataPane1" prefHeight="80.0" prefWidth="200.0">
+               <items>
+                  <HBox prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane prefHeight="80.0" prefWidth="100.0">
+                           <children>
+                              <Circle fx:id="indicator1" fill="#1fff6a" layoutX="46.0" layoutY="39.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="dataField1" layoutY="39.0" prefHeight="30.0" prefWidth="175.0" text="Data 1" />
+                              <Label fx:id="dataLabel1" layoutY="8.0" prefHeight="20.0" prefWidth="175.0" text="Data Desc" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </items>
+            </SplitPane>
+            <SplitPane fx:id="dataPane2" prefHeight="80.0" prefWidth="200.0">
+               <items>
+                  <HBox prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane prefHeight="80.0" prefWidth="100.0">
+                           <children>
+                              <Circle fx:id="indicator2" fill="#1fff6a" layoutX="46.0" layoutY="39.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="dataField2" layoutY="39.0" prefHeight="30.0" prefWidth="175.0" text="Data 2" />
+                              <Label fx:id="dataLabel2" layoutY="8.0" prefHeight="20.0" prefWidth="175.0" text="Data Desc" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </items>
+            </SplitPane>
+            <SplitPane fx:id="dataPane3" prefHeight="80.0" prefWidth="200.0">
+               <items>
+                  <HBox prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane prefHeight="80.0" prefWidth="100.0">
+                           <children>
+                              <Circle fx:id="indicator3" fill="#1fff6a" layoutX="46.0" layoutY="39.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="dataField3" layoutY="39.0" prefHeight="30.0" prefWidth="175.0" text="Data 3" />
+                              <Label fx:id="dataLabel3" layoutY="8.0" prefHeight="20.0" prefWidth="175.0" text="Data Desc" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </items>
+            </SplitPane>
+            <SplitPane fx:id="dataPane4" prefHeight="80.0" prefWidth="200.0">
+               <items>
+                  <HBox prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane prefHeight="80.0" prefWidth="100.0">
+                           <children>
+                              <Circle fx:id="indicator4" fill="#1fff6a" layoutX="46.0" layoutY="39.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="dataField4" layoutY="39.0" prefHeight="30.0" prefWidth="175.0" text="Data 4" />
+                              <Label fx:id="dataLabel4" layoutY="8.0" prefHeight="20.0" prefWidth="175.0" text="Data Desc" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </items>
+            </SplitPane>
+            <SplitPane fx:id="dataPane5" prefHeight="80.0" prefWidth="200.0">
+               <items>
+                  <HBox prefHeight="80.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane prefHeight="80.0" prefWidth="100.0">
+                           <children>
+                              <Circle fx:id="indicator5" fill="#1fff6a" layoutX="46.0" layoutY="39.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="dataField5" layoutY="39.0" prefHeight="30.0" prefWidth="175.0" text="Data 5" />
+                              <Label fx:id="dataLabel5" layoutY="8.0" prefHeight="20.0" prefWidth="175.0" text="Data Desc" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </items>
+            </SplitPane>
+            <SplitPane prefHeight="30.0" prefWidth="200.0">
+               <items>
+                  <AnchorPane prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="elementsLabel" layoutX="24.0" layoutY="5.0" prefHeight="20.0" prefWidth="240.0" text="Elements List" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <ListView fx:id="elementsList" prefHeight="150.0" prefWidth="287.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
